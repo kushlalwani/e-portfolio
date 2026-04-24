@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instruction Set | Kush Lalwani</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +16,7 @@
         <a href="../about.html">About</a>
         <a href="../resume.html">Resume</a>
         <a class="active" href="../writing-samples.html">Writing Samples</a>
+        <button class="contact-trigger" type="button" data-contact-open>Contact</button>
       </div>
     </nav>
   </header>
@@ -55,5 +57,17 @@
   <footer class="site-footer">
     <p>© 2026 Kush Lalwani. Built for English e-Portfolio.</p>
   </footer>
+
+  <div class="contact-modal" data-contact-modal hidden>
+    <div class="contact-backdrop" data-contact-close></div>
+    <section class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <button class="contact-close" type="button" aria-label="Close contact window" data-contact-close>&times;</button>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Get In Touch</h2>
+      <p>You can reach me directly by email.</p>
+      <p><a href="mailto:kushlalwani594@gmail.com">kushlalwani594@gmail.com</a></p>
+      <a class="button primary" href="mailto:kushlalwani594@gmail.com">Open Email Draft</a>
+    </section>
+  </div>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Kush Lalwani</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +16,7 @@
         <a class="active" href="about.html">About</a>
         <a href="resume.html">Resume</a>
         <a href="writing-samples.html">Writing Samples</a>
+        <button class="contact-trigger" type="button" data-contact-open>Contact</button>
       </div>
     </nav>
   </header>
@@ -24,32 +26,46 @@
       <p class="eyebrow">About</p>
       <h1>About Me</h1>
       <p>
-        Placeholder intro: I am a senior at Penn State studying Computational Data
-        Sciences with minors in Mathematics and Statistics.
+        I am a senior at Penn State University pursuing a degree in Computational
+        Data Sciences, with minors in Mathematics and Statistics. My academic and
+        project experience has focused on developing strong analytical skills and
+        applying data-driven approaches to real-world problems.
+      </p>
+      <p>
+        I am especially interested in using data to generate insights and
+        communicate them clearly to support decision-making.
       </p>
     </section>
 
     <section class="content-layout">
       <div class="content-main">
         <h2>Background</h2>
-        <p>
-          Replace this section with a short professional biography. This can include
-          academic background, career interests, and the path that led you toward
-          data science, AI, and analytics.
-        </p>
+        <ul class="plain-list">
+          <li>Senior pursuing a B.S. in Computational Data Sciences</li>
+          <li>Minors in Mathematics and Statistics</li>
+          <li>Graduating with honors and selected as a Graduation Marshal</li>
+          <li>Strong academic foundation in data analysis, machine learning, and statistical modeling</li>
+          <li>Experience working with both structured and real-world datasets across academic and project-based work</li>
+          <li>Developed an interest in using data to better understand problems and support decision-making</li>
+        </ul>
 
         <h2>Professional Interests</h2>
-        <p>
-          Placeholder text for interests in AI, data analysis, technical writing,
-          and using technical skills to solve practical problems.
-        </p>
+        <ul class="plain-list">
+          <li>Pursue a career in data analytics or AI-focused roles</li>
+          <li>Apply data science techniques to solve real-world, practical problems</li>
+          <li>Work in environments that combine technical work with communication and collaboration</li>
+          <li>Continue developing skills in machine learning, data systems, and analytical thinking</li>
+          <li>Contribute to teams where data can drive meaningful insights and decisions</li>
+        </ul>
 
         <h2>Experience</h2>
-        <p>
-          Add short descriptions of experiences such as Outlier AI, Nittany
-          Motorsport, and HackPSU. Focus on what each experience taught you and
-          how it shaped your professional goals.
-        </p>
+        <ul class="plain-list">
+          <li>Experience applying data analysis and machine learning techniques to project-based work</li>
+          <li>Background in building and working with data pipelines and analytical workflows</li>
+          <li>Experience creating dashboards and visualizations to communicate insights</li>
+          <li>Strong focus on presenting technical information clearly and effectively</li>
+          <li>Experience working in team-based environments and contributing to collaborative projects</li>
+        </ul>
       </div>
 
       <aside class="sidebar">
@@ -62,6 +78,8 @@
           <li>B.S. Computational Data Sciences</li>
           <li>Minors: Mathematics, Statistics</li>
           <li>Expected Graduation: May 2026</li>
+          <li>Honors Graduate</li>
+          <li>Graduation Marshal</li>
         </ul>
       </aside>
     </section>
@@ -70,5 +88,17 @@
   <footer class="site-footer">
     <p>© 2026 Kush Lalwani. Built for English e-Portfolio.</p>
   </footer>
+
+  <div class="contact-modal" data-contact-modal hidden>
+    <div class="contact-backdrop" data-contact-close></div>
+    <section class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <button class="contact-close" type="button" aria-label="Close contact window" data-contact-close>&times;</button>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Get In Touch</h2>
+      <p>You can reach me directly by email.</p>
+      <p><a href="mailto:kushlalwani594@gmail.com">kushlalwani594@gmail.com</a></p>
+      <a class="button primary" href="mailto:kushlalwani594@gmail.com">Open Email Draft</a>
+    </section>
+  </div>
 </body>
 </html>

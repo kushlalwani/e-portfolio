@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Kush Lalwani</title>
+  <title>Kush Lalwani | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +16,7 @@
         <a href="about.html">About</a>
         <a href="resume.html">Resume</a>
         <a href="writing-samples.html">Writing Samples</a>
+        <button class="contact-trigger" type="button" data-contact-open>Contact</button>
       </div>
     </nav>
   </header>
@@ -22,12 +24,17 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Data Science • AI • Technical Communication</p>
+        <p class="eyebrow">Computational Data Sciences • Analytics • Technical Communication</p>
         <h1>Turning complex data into clear, actionable insight.</h1>
         <p>
-          I am a Penn State Computational Data Sciences student interested in AI,
-          analytics, and practical technical communication. This portfolio brings
-          together selected writing, project work, and reflections.
+          Computational Data Sciences student at Penn State University, with minors
+          in Mathematics and Statistics. I have a strong foundation in data
+          analysis, machine learning, and data-driven problem solving.
+        </p>
+        <p>
+          My work focuses on using data to generate clear insights and support
+          informed decision-making, with an emphasis on clarity, structure, and
+          effective communication.
         </p>
         <div class="button-row">
           <a class="button primary" href="writing-samples.html">View Writing Samples</a>
@@ -37,10 +44,10 @@
       <div class="hero-card" aria-label="Portfolio highlights">
         <h2>Focus Areas</h2>
         <ul class="highlight-list">
-          <li>AI and LLM evaluation</li>
-          <li>Data analysis and visualization</li>
-          <li>Machine learning projects</li>
-          <li>Clear technical writing</li>
+          <li>Data Analysis &amp; Visualization</li>
+          <li>Machine Learning &amp; Predictive Modeling</li>
+          <li>Data Engineering &amp; Scalable Systems</li>
+          <li>Technical Communication &amp; Problem Solving</li>
         </ul>
       </div>
     </section>
@@ -67,8 +74,8 @@
           <a href="samples/research-paper.html">Read sample</a>
         </article>
         <article class="card">
-          <h3>Project Sample</h3>
-          <p>A fourth sample to be selected from a coding project or redesign memo.</p>
+          <h3>Document Redesign</h3>
+          <p>A redesign memo that shows revision, usability, and audience-focused communication.</p>
           <a href="samples/project-sample.html">Read sample</a>
         </article>
       </div>
@@ -78,5 +85,17 @@
   <footer class="site-footer">
     <p>© 2026 Kush Lalwani. Built for English e-Portfolio.</p>
   </footer>
+
+  <div class="contact-modal" data-contact-modal hidden>
+    <div class="contact-backdrop" data-contact-close></div>
+    <section class="contact-panel" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <button class="contact-close" type="button" aria-label="Close contact window" data-contact-close>&times;</button>
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Get In Touch</h2>
+      <p>You can reach me directly by email.</p>
+      <p><a href="mailto:kushlalwani594@gmail.com">kushlalwani594@gmail.com</a></p>
+      <a class="button primary" href="mailto:kushlalwani594@gmail.com">Open Email Draft</a>
+    </section>
+  </div>
 </body>
 </html>
