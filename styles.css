@@ -58,6 +58,17 @@ h1 {
   max-width: 14em;
 }
 
+.hero-title {
+  font-size: 2.15rem;
+  line-height: 1.08;
+  max-width: 100%;
+}
+
+.hero-line {
+  display: block;
+  white-space: normal;
+}
+
 h2 {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -131,6 +142,12 @@ h3 {
   padding: 4rem 1.25rem;
 }
 
+.hero-single {
+  grid-template-columns: 1fr;
+  min-height: auto;
+  padding-bottom: 1rem;
+}
+
 .hero-copy {
   background: var(--surface-soft);
   border: 1px solid rgba(58, 23, 114, 0.14);
@@ -138,6 +155,10 @@ h3 {
   box-shadow: var(--shadow);
   padding: 2rem 2rem 2rem 2.3rem;
   position: relative;
+}
+
+.hero-single .hero-copy {
+  max-width: 100%;
 }
 
 .hero-copy::before {
@@ -152,7 +173,7 @@ h3 {
 }
 
 .hero-copy p {
-  max-width: 42rem;
+  max-width: 56rem;
 }
 
 .eyebrow {
@@ -234,6 +255,16 @@ h3 {
   padding: 1.5rem;
 }
 
+.section-compact {
+  padding-top: 0;
+}
+
+.focus-grid {
+  display: grid;
+  gap: 0.8rem 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .highlight-list,
 .plain-list {
   margin: 0;
@@ -304,11 +335,19 @@ h3 {
   max-width: 100%;
 }
 
+.about-page > .page-header {
+  max-width: 100%;
+}
+
 .content-layout {
   align-items: start;
   display: grid;
   gap: 2rem;
   grid-template-columns: minmax(0, 1fr) 320px;
+}
+
+.about-layout {
+  grid-template-columns: 320px minmax(0, 1fr);
 }
 
 .content-main,
@@ -419,16 +458,12 @@ h3 {
   padding: 1.35rem 1.25rem 1.25rem;
 }
 
-.download-link {
-  align-items: center;
-  display: inline-flex;
-  gap: 0.45rem;
+.download-row {
+  margin-bottom: 1rem;
 }
 
-.download-icon {
-  color: var(--secondary);
-  font-size: 1rem;
-  line-height: 1;
+.download-button {
+  width: auto;
 }
 
 .pdf-frame {
@@ -506,6 +541,14 @@ h3 {
     font-size: 2.15rem;
   }
 
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .hero-line {
+    white-space: normal;
+  }
+
   .nav {
     align-items: flex-start;
     flex-direction: column;
@@ -522,12 +565,15 @@ h3 {
   }
 
   .hero {
-    min-height: auto;
     padding-top: 3rem;
   }
 
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .focus-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -538,6 +584,10 @@ h3 {
 
   h1 {
     font-size: 1.85rem;
+  }
+
+  .hero-title {
+    font-size: 1.7rem;
   }
 
   .card-grid {
