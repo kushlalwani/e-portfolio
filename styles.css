@@ -419,12 +419,24 @@ h3 {
   padding: 1.35rem 1.25rem 1.25rem;
 }
 
+.download-link {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.45rem;
+}
+
+.download-icon {
+  color: var(--secondary);
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .pdf-frame {
   background: var(--white);
   border: 1px solid rgba(31, 19, 0, 0.18);
   border-radius: 8px;
-  height: min(82vh, 900px);
-  min-height: 680px;
+  height: min(96vh, 1200px);
+  min-height: 950px;
   overflow: hidden;
 }
 
@@ -548,7 +560,7 @@ h3 {
   }
 
   .pdf-frame {
-    height: 72vh;
-    min-height: 520px;
+    height: 82vh;
+    min-height: 700px;
   }
 }
