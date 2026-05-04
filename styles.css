@@ -85,6 +85,10 @@ h1 {
   white-space: normal;
 }
 
+.hero-line + .hero-line {
+  margin-top: 0.5rem;
+}
+
 h2 {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -114,7 +118,7 @@ h3 {
 
 .logo {
   color: var(--text);
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   font-weight: 800;
   text-decoration: none;
 }
@@ -344,6 +348,10 @@ h3 {
   padding: 3rem 1.25rem;
 }
 
+.featured-section {
+  padding-top: 1.5rem;
+}
+
 .section-heading {
   margin-bottom: 1.5rem;
 }
@@ -556,6 +564,26 @@ h3 {
 
 .site-footer a {
   color: var(--white);
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-bottom: 0.85rem;
+}
+
+.social-link {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.social-link img {
+  display: block;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  width: 22px;
 }
 
 .contact-modal {
